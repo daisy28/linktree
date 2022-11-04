@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/linktree-clone-HNG-/static/css/main.86f8305e.css",
+    "main.js": "/linktree-clone-HNG-/static/js/main.0fd71505.js",
+    "static/media/ZwjOPs2h_400x400.jpg": "/linktree-clone-HNG-/static/media/ZwjOPs2h_400x400.737e7360559006d90dd5.jpg",
+    "index.html": "/linktree-clone-HNG-/index.html",
+    "main.86f8305e.css.map": "/linktree-clone-HNG-/static/css/main.86f8305e.css.map",
+    "main.0fd71505.js.map": "/linktree-clone-HNG-/static/js/main.0fd71505.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86f8305e.css",
+    "static/js/main.0fd71505.js"
+  ]
+}
