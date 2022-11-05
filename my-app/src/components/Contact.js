@@ -1,11 +1,10 @@
 import React from "react"
+// import  { useState } from "react"
 import Footer from "./Footer"
-import { useForm } from "react-hook-form";
 
 const Contact = () => {
 
-     const { register, handleSubmit, formState: { errors } } = useForm();
-     const onSubmit = data => console.log(data);
+
      const name = "Gloria";
 
      return(
@@ -16,32 +15,30 @@ const Contact = () => {
                          <h1>Contact me</h1>
                          <p>Hi there, contact me to ask me about anything you have in mind.</p>
                          </div>
-                    
-                         <form onSubmit={handleSubmit(onSubmit)} className="form">
+               
+                         <form className="form">
 
                               <div className="input-group">
 
                                    <div className="group">
-                                        <label>First Name</label>
-                                        <input type="text" id="first_name" placeholder="Enter your first name" />
+                                        <label for="first_name">First Name</label>
+                                        <input type="text" id="first_name" placeholder="Enter your first name" required/>
                                    </div>
 
                                    <div className="group">
-                                        <label>Last Name</label>
-                                        <input type="text" id="last_name" placeholder="Enter your last name" />
+                                        <label for="last_name">Last Name</label>
+                                        <input type="text" id="last_name" placeholder="Enter your last name" required/>
                                    </div>
                               </div>
 
-                              <label>Email</label>
-                              <input type="email" id="email" placeholder="yourname@email.com"/>
+                              <label for="email">Email</label>
+                              <input type="email" id="email" placeholder="yourname@email.com" required />
 
-                              <label>Message</label>
-                              <textarea className={`form-control ${errors.message && "invalid"}`} id="message" placeholder="Send me a message and I'll reply you as soon as possible..." {...register("message",{required: true})}></textarea>
-                              <div className="error">
-                                   <small>
-                                        {errors.message?.type === "required" && "Please enter a message"}
-                                   </small>
-                              </div>
+                              <label for="message">Message</label>
+                              <textarea
+                               id="message" 
+                               placeholder="Send me a message and I'll reply you as soon as possible..." ></textarea>
+                         
                               
                               <label className="checkbox"><p>You agree to providing your data to {name} who may contact you.</p>
                               <input type="checkbox" />

@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 *{
      margin: 0;
@@ -294,19 +294,17 @@ span > .tooltipbtntext::after{
      margin-bottom: 1rem;
  }
 
-.error{
-     color: #F83F23;
-     font-weight: 500;
- }
 
- textarea.invalid{
+
+
+ /* textarea.invalid{
      border: 1px solid #F83F23;
      outline: none;
- }
+ } */
 
- textarea.invalid:focus{
+ /* textarea.invalid:focus{
      box-shadow: 6px 6px 7px #FFD3CC, -6px -6px 7px #FFD3CC;
- }
+ } */
 
 
 .form .checkbox {
