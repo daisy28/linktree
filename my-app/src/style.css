@@ -298,13 +298,10 @@ span > .tooltipbtntext::after{
      color: #F83F23;
  }
 
-/* input.invalid{
+ textarea:invalid{
      border: 1px solid #F83F23;
  }
 
- input:active{
-     border: 1px solid #F83F23;
- } */
 
 .form .checkbox {
      display: block;

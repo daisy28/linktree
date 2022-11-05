@@ -19,7 +19,6 @@ const Contact = () => {
           if (event.target.checked === "checked"){
                console.log("")
           }
-          // setFormData(copy)
           else {
                setFormData(() => ({
                     ...formData,
@@ -87,7 +86,7 @@ const Contact = () => {
                                         onChange={onChangeHandler}
                                         value={formData.firstname}
                                         />
-                                        <small>{formError.firstname}</small>
+                                        {/* <small>{formError.firstname}</small> */}
                                    </div>
 
                                    <div className="group">
@@ -100,7 +99,7 @@ const Contact = () => {
                                          onChange={onChangeHandler}
                                          value={formData.lastname}
                                          />
-                                         <small>{formError.lastname}</small>
+                                         {/* <small>{formError.lastname}</small> */}
                                    </div>
                               </div>
 
@@ -113,7 +112,7 @@ const Contact = () => {
                               onChange={onChangeHandler}
                               value={formData.email}
                               />
-                              <small>{formError.email}</small>
+                              {/* <small>{formError.email}</small> */}
 
                               <label htmlFor="message">Message</label>
                               <textarea
